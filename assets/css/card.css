@@ -1,0 +1,226 @@
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css";
+
+body {
+  background-color: #23252c;
+  font-family: "Inter", sans-serif;
+}
+
+section {
+  width: 30%;
+  margin: 3rem auto;
+}
+
+.card {
+  width: 90%;
+  margin: 35px auto;
+  border: 1px solid #ababab;
+  border-radius: 10px;
+  background-color: #161619;
+}
+
+.card-image {
+  width: 100%;
+  height: 230px;
+  background-image: url("https://picsum.photos/seed/picsum/200/200");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.titles {
+  text-align: center;
+  padding-bottom: 0.2rem;
+}
+
+.titles h1 {
+  font-weight: 600;
+  font-size: 25px;
+  color: #ffffff;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.titles h2 {
+  font-weight: 400;
+  font-size: 13px;
+  color: #f3bf99;
+  line-height: 15.5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.titles p {
+  font-weight: 400;
+  font-size: 11px;
+  color: #f5f5f5;
+  line-height: 15px;
+}
+
+.card-content {
+  margin: 0 auto;
+  background-color: black;
+  padding-top: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.2rem;
+}
+
+button {
+  width: 115px;
+  height: 35px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+button:nth-child(1) {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  color: #374151;
+}
+
+button:nth-child(2) {
+  background-color: #5093e2;
+  border: 1px solid #3787e2;
+  color: #ffffff;
+}
+
+button  span:nth-child(1) {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 5%;
+}
+
+.button-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+button:hover {
+  background-color: #575758;
+  border: 1px solid #e7e8ea;
+  color: #f7f8fa;
+}
+
+.bio {
+  padding: 13px 30px;
+}
+
+.bio div h2 {
+  font-weight: 600;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  color: #f5f5f5;
+}
+
+.bio div p {
+  font-weight: 400;
+  font-size: 11px;
+  font-style: normal;
+  line-height: 15px;
+  color: #dcdcdc;
+}
+
+footer {
+  margin-bottom: 10px;
+}
+
+#footer-contact{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+}
+
+footer i {
+  color: white;
+  font-size: 25px;
+}
+
+.contactInfo {
+  color: white;
+  animation: first_color 0.5s ease-in-out infinite alternate;
+  cursor: pointer;
+}
+
+.contactInfo:nth-child(2) {
+  animation: second_color 0.5s ease-in-out infinite alternate;
+}
+
+.contactInfo:nth-child(3) {
+  animation: third_color 0.5s ease-in-out infinite alternate;
+}
+
+.contactInfo:nth-child(4) {
+  animation: fourth_color 0.5s ease-in-out infinite alternate;
+}
+
+.contactInfo:nth-child(5) {
+  animation: fifth_color 0.5s ease-in-out infinite alternate;
+}
+
+
+
+@keyframes first_color {
+  0% {
+    text-shadow: 0 0 10px #ff1177, 0 0 20px #d6249f, 0 0 30px #285aeb;
+  }
+  100% {
+    text-shadow: 0 0 5px #ff1177, 0 0 10px #d6249f, 0 0 15px #285aeb;
+  }
+}
+
+@keyframes second_color {
+  0% {
+    text-shadow: 0 0 10px #128c7e, 0 0 20px #25d366, 0 0 30px #285aeb;
+  }
+  100% {
+    text-shadow: 0 0 5px #128c7e, 0 0 10px #25d366, 0 0 15px #285aeb;
+  }
+}
+
+@keyframes third_color {
+  0% {
+    text-shadow: 0 0 10px #4267b2, 0 0 20px #898f9c, 0 0 30px #000000;
+  }
+  100% {
+    text-shadow: 0 0 5px #4267b2, 0 0 10px #898f9c, 0 0 15px #000000;
+  }
+}
+
+@keyframes fourth_color {
+  0% {
+    text-shadow: 0 0 10px #1da1f2, 0 0 20px #657786, 0 0 30px #f5f8fa;
+  }
+  100% {
+    text-shadow: 0 0 5px #1da1f2, 0 0 10px #657786, 0 0 15px #f5f8fa;
+  }
+}
+
+@keyframes fifth_color {
+  0% {
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff00ff, 0 0 30px #e6fb04;
+  }
+  100% {
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff00ff, 0 0 15px #e6fb04;
+  }
+}

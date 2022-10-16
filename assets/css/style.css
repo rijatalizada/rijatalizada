@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header{
+    background-image: url('../images//istockphoto-1015507732-170667a.jpeg');
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    height: 5rem;
+    background-color: transparent;
+    box-shadow: 0px 7px 66px -1px rgba(0,0,0,0.75);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    width: 80%;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav ul li{
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(200, 193, 193);
+}
