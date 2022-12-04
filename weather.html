@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/weather.css">
+</head>
+<body>
+    <div class="box">
+        <header>
+            <input class="focus:outline-none mb-10" id="name-input" type="text" placeholder="City Name" >
+            <form id="searching-panel">
+                <input class="focus:outline-none" value="40.409264" id="lat-input" type="number" placeholder="Latitude" step="0.000000000000001">
+                <input class="focus:outline-none" value="49.867092" id="lon-input" type="number" placeholder="Longitude" step="0.0000000000000001">
+                <input type="submit" value="Search" class="text-white cursor-pointer mt-2" >
+            </form>
+        </header>
+        <main>
+            <div class="city">
+                <header>
+                    <div>
+                        <p class="text-white text-xl">Baku, Azerbaijan</p>
+                        <p class="text-white weather-condition">Clouds, overcast clouds</p>
+                    </div>
+                    <div class="temp">
+                        <span>10<sup>o</sup></span>
+                        <div>
+                            <span class="border-right pr-1">humidity: 10</span>
+                            <span>pressure: 7010</span>
+                        </div>
+                    </div>
+                    <div class="detailed-temp">
+                        <p>min-temp: <span>8<sup>o</sup></span> </p>
+                        <p>max-temp: <span>12<sup>o</sup></span> </p>
+                        <p>feels-like: <span>3<sup>o</sup></span> </p>
+                    </div>
+
+                </header>
+                <main>
+                    
+                </main>
+            </div>
+        </main>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="js/weather.js"></script>
+</body>
+</html>
