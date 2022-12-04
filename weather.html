@@ -10,26 +10,26 @@
 </head>
 <body>
     <div class="box">
-        <header>
-            <input class="focus:outline-none mb-10" id="name-input" type="text" placeholder="City Name" >
+        <header class="flex items-start">
             <form id="searching-panel">
-                <input class="focus:outline-none" value="40.409264" id="lat-input" type="number" placeholder="Latitude" step="0.000000000000001">
-                <input class="focus:outline-none" value="49.867092" id="lon-input" type="number" placeholder="Longitude" step="0.0000000000000001">
-                <input type="submit" value="Search" class="text-white cursor-pointer mt-2" >
+                <input class="focus:outline-none" id="name-input" type="text" placeholder="City Name" >
+                <input class="focus:outline-none" id="lat-input" type="number" placeholder="Latitude" step="0.000000000000001">
+                <input class="focus:outline-none" id="lon-input" type="number" placeholder="Longitude" step="0.0000000000000001">
+                <input type="submit"  value="Search" class="text-white rounded-md cursor-pointer mt-2" >
             </form>
         </header>
-        <main>
-            <div class="city">
+        <main class="main-doc">
+            <!-- <div class="city">
                 <header>
                     <div>
-                        <p class="text-white text-xl">Baku, Azerbaijan</p>
+                        <p class="text-white text-xl">Baku, Azerbaijan </p>
                         <p class="text-white weather-condition">Clouds, overcast clouds</p>
                     </div>
                     <div class="temp">
                         <span>10<sup>o</sup></span>
-                        <div>
-                            <span class="border-right pr-1">humidity: 10</span>
-                            <span>pressure: 7010</span>
+                        <div class="flex items-center gap-1">
+                            <span class="border-right pr-1">Humidity: 10%</span>
+                            <span>Pressure: 7010HG</span>
                         </div>
                     </div>
                     <div class="detailed-temp">
@@ -40,9 +40,14 @@
 
                 </header>
                 <main>
-                    
+                    <div>
+                        <p class="text-white time">Sun Dec 04 2022 20:00:05 GMT+0400 (Azerbaijan Standard Time)</p>
+                    </div>
+                    <div class="wind">
+                        <p>Wind: 7.2 m/s North</p>
+                    </div>
                 </main>
-            </div>
+            </div> -->
         </main>
 
     </div>
